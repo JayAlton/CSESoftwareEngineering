@@ -4,8 +4,8 @@ echo "PHP code is being executed.<br>";
 
 // Database configuration for XAMPP
 $db_host = "localhost"; // XAMPP default host
-$db_user = "root"; // XAMPP default username
-$db_password = ""; // XAMPP default password (usually empty)
+$db_user = "quickme1_4211"; // XAMPP default username
+$db_password = "csci4211"; // XAMPP default password (usually empty)
 $db_name = "dbvpny1qngaxgp"; // Change this to your database name
 
 // Check if the form is submitted
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Database connection successful.<br>";
 
     // Perform user authentication
-    $query = "SELECT userid FROM login_tbl WHERE userid='$userid' AND password='$password'";
+    $query = "SELECT userid FROM `login_tbl` WHERE userid='$userid' AND password='$password'";
     $result = mysqli_query($conn, $query);
 
     // Check if the query executed successfully
