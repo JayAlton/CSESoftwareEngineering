@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             session_start();
             $_SESSION['userid'] = $userid;
-            header("Location: bankhome.html"); // Redirect to success page
+            header("Location: dashboard.php"); // Redirect to success page
             exit();
         }
     } else {

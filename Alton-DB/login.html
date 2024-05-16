@@ -80,9 +80,9 @@ span.psw {
 
 <! Content Starts>
 <div class="imgcontainer">
-   <h1> California State University</h1>
+   <h1> California State University San Bernardino ABC Bank</h1>
   </div>
-<center><h2>CSE-4550 Project Sign In Form</h2>
+<center><h2>Login Page</h2>
 
 <form name="signin" method="post" action="authenticatelogin.php">
   
@@ -93,6 +93,9 @@ span.psw {
     <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="pass" required>
         
+    <!-- Add a hidden input field to pass the user ID -->
+    <input type="hidden" name="user_id" value="<?php echo $userid; ?>">
+    
     <button type="submit">Login</button>
     <input type="checkbox" checked="checked"> Remember me
   </div>

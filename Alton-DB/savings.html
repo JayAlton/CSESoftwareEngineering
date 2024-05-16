@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        section {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Savings Account</h1>
+    </header>
+    <section>
+        <table>
+            <tr>
+                <th>Account Number</th>
+                <th>Balance</th>
+                <th>Interest Rate</th>
+            </tr>
+            <tr>
+                <td>SAV123456</td>
+                <td>$5,000.00</td>
+                <td>2.5%</td>
+            </tr>
+        </table>
+    </section>
+    <form action="deposit.php" method="post">
+        <label for="amount">Enter deposit amount:</label><br>
+        <input type="number" id="amount" name="amount"><br>
+        <button type="submit">Deposit</button>
+    </form>
+    <form action="withdraw.php" method="post">
+        <label for="amount">Enter withdrawal amount:</label><br>
+        <input type="number" id="amount" name="amount"><br>
+        <button type="submit">Withdraw</button>
+    </form>
+</body>
+</html>
