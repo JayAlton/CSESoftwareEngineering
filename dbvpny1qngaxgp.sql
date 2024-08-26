@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `checking` (
 --
 
 INSERT INTO `checking` (`Acct_no`, `userid`, `lastname`, `firstname`, `address`, `email`, `phone`, `Balance`, `Date`, `TRansID`) VALUES
-(123456789, 'jalton', 'Alton', 'Jayden', '471 Lexington Circle', 'jmalton77@gmail.com', '7606072036', 11, '2024-05-12', 123456789),
+(123456789, 'jalton', 'Alton', 'Jayden', '123 Lexington Ave', 'jayden123@gmail.com', '7606171536', 11, '2024-05-12', 123456789),
 (0, 'quickme1_4211', '', '', '', '', '', 442, '2024-05-16', 0);
 
 -- --------------------------------------------------------
@@ -73,10 +73,10 @@ CREATE TABLE IF NOT EXISTS `checking_transactions` (
 --
 
 INSERT INTO `checking_transactions` (`transid`, `trans_type`, `trans_date`, `trans-amount`, `lastname`, `firstname`, `phone`) VALUES
-(123456789, 'Deposit', '2024-05-16', 100, 'Alton', 'Jayden', '7606072036'),
-(123456789, 'Deposit', '2024-05-16', 12, 'Alton', 'Jayden', '7606072036'),
-(123456789, 'Deposit', '2024-05-16', 293, 'Alton', 'Jayden', '7606072036'),
-(123456789, 'Deposit', '2024-05-16', 12, 'Alton', 'Jayden', '7606072036'),
+(123456789, 'Deposit', '2024-05-16', 100, 'Alton', 'Jayden', '7606171536'),
+(123456789, 'Deposit', '2024-05-16', 12, 'Alton', 'Jayden', '7606171536'),
+(123456789, 'Deposit', '2024-05-16', 293, 'Alton', 'Jayden', '7606171536'),
+(123456789, 'Deposit', '2024-05-16', 12, 'Alton', 'Jayden', '7606171536'),
 (123123123, 'Deposit', '2024-05-16', 1200, 'User', 'Default', '1231231234'),
 (123123123, 'Deposit', '2024-05-16', 32, 'User', 'Default', '1231231234'),
 (123123123, 'Deposit', '2024-05-16', 4590, 'User', 'Default', '1231231234'),
@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `investment` (
 --
 
 INSERT INTO `investment` (`Acct_no`, `userid`, `lastname`, `firstname`, `address`, `email`, `phone`, `Balance`, `Date`, `TRansID`, `interest-rate`, `total-amount`) VALUES
-(111222333, 'jalton', 'Alton', 'Jayden', '471 Lexington Cir', 'jmalton77@gmail.com', '7606072036', 3872.9628246951, '2016-05-11', 0, 10, 0),
+(111222333, 'jalton', 'Alton', 'Jayden', '123 Lexington Ave', 'jayden123@gmail.com', '7606171536', 3872.9628246951, '2016-05-11', 0, 10, 0),
 (0, 'quickme1_4211', '', '', '', '', '', 2534, '2024-05-16', 0, 0.1, 0);
 
 -- --------------------------------------------------------
@@ -140,10 +140,10 @@ CREATE TABLE IF NOT EXISTS `investment_transactions` (
 --
 
 INSERT INTO `investment_transactions` (`transid`, `trans_type`, `trans_date`, `trans-amount`, `lastname`, `firstname`, `phone`) VALUES
-(111222333, 'Deposit', '2024-05-16', 12, 'Alton', 'Jayden', '7606072036'),
-(111222333, 'Withdrawal', '2024-05-16', 12, 'Alton', 'Jayden', '7606072036'),
-(111222333, 'Deposit', '2024-05-16', 123, 'Alton', 'Jayden', '7606072036'),
-(111222333, 'Withdrawal', '2024-05-16', 123, 'Alton', 'Jayden', '7606072036'),
+(111222333, 'Deposit', '2024-05-16', 12, 'Alton', 'Jayden', '7606171536'),
+(111222333, 'Withdrawal', '2024-05-16', 12, 'Alton', 'Jayden', '7606171536'),
+(111222333, 'Deposit', '2024-05-16', 123, 'Alton', 'Jayden', '7606171536'),
+(111222333, 'Withdrawal', '2024-05-16', 123, 'Alton', 'Jayden', '7606171536'),
 (0, 'Transfer', '2024-05-16', 500, '', '', ''),
 (0, 'Transfer', '2024-05-16', 34, '', '', '');
 
@@ -172,7 +172,7 @@ CREATE TABLE IF NOT EXISTS `login_tbl` (
 --
 
 INSERT INTO `login_tbl` (`userid`, `password`, `lastname`, `firstname`, `address`, `phone`, `email`, `Testquestion`, `Testanswer`, `usertype`) VALUES
-('jalton', 'Pa$$w0rd', 'Alton', 'Jayden', '471 Lexington Circle', '7606072036', 'jmalton77@gmail.com', 'What is the name of your first pet?', 'Misty', 'admin'),
+('jalton', 'Pa$$w0rd', 'Alton', 'Jayden', '123 Lexington Ave', '7606171536', 'jayden123@gmail.com', 'What is the name of your first pet?', 'Bob', 'admin'),
 ('bsmith', 'Pa$$w0rd', 'Smith', 'Bob', '123 Bob Ave', '7607607600', 'bob@gmail.com', 'Answer is none?', 'none', ''),
 ('quickme1_4211', 'csci4211', 'User', 'Default', '123 Default Lane', '1231231234', 'default@gmail.com', 'Are you default?', 'Yes', 'default');
 
@@ -205,7 +205,7 @@ CREATE TABLE IF NOT EXISTS `savings` (
 --
 
 INSERT INTO `savings` (`Acct_no`, `userid`, `lastname`, `firstname`, `address`, `email`, `phone`, `Balance`, `Date`, `TRansID`, `interest-rate`, `total-amount`) VALUES
-(987654321, 'jalton', 'Alton', 'Jayden', '471 Lexington Circle', 'jmalton77@gmail.com', '7606072036', 166.8491514476342, '2024-05-12', 987654321, 2.5, 0),
+(987654321, 'jalton', 'Alton', 'Jayden', '123 Lexington Ave', 'jayden123@gmail.com', '7606171536', 166.8491514476342, '2024-05-12', 987654321, 2.5, 0),
 (0, 'quickme1_4211', '', '', '', '', '', 24.024, '2024-05-16', 0, 0.1, 0);
 
 -- --------------------------------------------------------
@@ -230,8 +230,8 @@ CREATE TABLE IF NOT EXISTS `savings_transactions` (
 --
 
 INSERT INTO `savings_transactions` (`transid`, `trans_type`, `trans_date`, `trans-amount`, `lastname`, `firstname`, `phone`) VALUES
-(987654321, 'Deposit', '2024-05-16', 123, 'Alton', 'Jayden', '7606072036'),
-(987654321, 'Withdrawal', '2024-05-16', 12, 'Alton', 'Jayden', '7606072036'),
+(987654321, 'Deposit', '2024-05-16', 123, 'Alton', 'Jayden', '7606171536'),
+(987654321, 'Withdrawal', '2024-05-16', 12, 'Alton', 'Jayden', '7606171536'),
 (0, 'Deposit', '2024-05-16', 123, '', '', ''),
 (0, 'Deposit', '2024-05-16', 23, '', '', ''),
 (0, 'Transfer', '2024-05-16', 24, '', '', '');
